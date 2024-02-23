@@ -13,6 +13,7 @@ h1 {
     padding-left: 3rem;
     padding-top: 2rem;
     margin-bottom: 0.7rem;
+    height: 10vh;
 }
 
 h1 > span {
@@ -69,11 +70,15 @@ a:link, a:visited, a:hover, a:active {
     color: blue;
 }
 
+.resume-main {
+    height: 100vh;
+}
+
 .resume-content {
     overflow: scroll;
     padding: 3rem;
     padding-top: 0;
-    height: 100vh;
+    height: 80vh;
 }
 
 .name {

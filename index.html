@@ -1,121 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
     <title>My Resume</title>
-</head>
-<body>
-    <h1>Shammi Agarwal</h1>
-    <img src="./assets/images/profile.jpg" alt="profile picture" height="100">
-    <hr>
-    <h2>Summary</h2>
-    <p>I am a passionate software developer fueled by the thrill of solving complex problems and creating innovative solutions. With a solid foundation in Java development and an eagerness to learn new things, I thrive on pushing the boundaries of my knowledge and embracing new challenges head-on.</p>
-    <hr>
-    <h2>Education</h2>
-    <ul>
-        <li>
-            Degree : Bachelor of Technology(2017-2021)<br> Field : Electronics and Electrical Communications Engineering<br>
-            Institute : Indian Institute of Technology
-        </li>
-    </ul>
-    <hr>
-    <h2>Work Experience</h2>
-    <ul>
-        <li>
-            <h5>Advanced Software Engineer at Honeywell (Feb 2023 - Present)</h5>
-            <ul>
-                <li>Developing Enterprise Security application which is an access control application for enterprises to supervise access to employees.</li>
-                <li>Leading the integration of Enterprise Security with Z9 to communicate seamlessly with multiple access systems for easy migration.</li>
-            </ul>
-        </li>
-        <li>
-            <h5>Software Engineer II at Honeywell (Jul 2021 - Feb 2023)</h5>
-            <ul>
-                <li>Working on Niagara Framework, a data normalization based software infrastructure used to manage and control diverse systems and
-                devices communicating on a variety of protocols using multiple drivers.</li>
-                <li>Developed and owned anticipated feature, Visitor Integration service in Enterprise Security 4.12 release. The feature integrated Niagara's Enterprise Security service with Sine, a visitor management solution using AWS IoT based solutions for communication.</li>
-                <li>Enhanced Niagara Analytics module to improve user experience by providing data visualization using various charts and tables.</li>
-                <li>Cleaned around 2000 compiler warnings in enterprise security legacy code improving code quality.</li>
-            </ul>
-        </li>
-        <li>
-            <h5>Software Engineer Intern at Honeywell (Jun 2020 - Aug 2020)</h5>
-            <ul>
-                <li>Envisioned a Virtual Aircraft Assistant from scratch to decrease the workload of cabin crew and increase the safety of the aircraft.</li>
-                <li>Deployed Virtual Aircraft Assistant on an Edge Computer which receives the feed from a camera and trained model from cloud.</li>
-                <li>Implemented using a Deep Learning model YOLO on a darknet framework after comparing the results of multiple models.</li>
-                <li>Achieved a best case recall of 95% and an output of 24 frames per second on a NVIDIA TX2 edge device receiving live video.</li>
-            </ul>
-        </li>
-    </ul>
-    <hr>
-    <h2>Skills</h2>
-    <h4>Programming Skills</h4>
-    <ul>
-        <li>Java</li>
-        <li>C++</li>
-        <li>C</li>
-        <li>Javascript</li>
-        <li>HTML5</li>
-        <li>CSS</li>
-        <li>Python</li>
-    </ul>
-    <h4>Technical Skills</h4>
-    <ul>
-        <li>Amazon Web Services</li>
-        <li>Azure Cloud</li>
-        <li>Git</li>
-        <li>Data Analytics</li>
-    </ul>
-    <hr>
-    <h2>Licenses and Certificates</h2>
-    <ul>
-        <li>
-            <h5>TRIDIUM INC CERTIFIED NIAGARA DEVELOPER</h5>
-            Niagara is a framework built on top of Java. In this certification, learnt and developed drivers and appliances in Niagara framework.
-        </li>
-        <li>
-            <h5>MICROSOFT CERTIFIED: AZURE FUNDAMENTALS</h5>
-            Certified for proper understand of the fundamentals of azure cloud and the various services offered by it.
-        </li>
-        <li>
-            <h5>ULTIMATE AWS CERTIFIED SOLUTIONS ARCHITECT ASSOCIATE</h5>
-            Practical implementation of multiple aws services and studying unique architectures built using these services
-        </li>
-    </ul>
-    <hr>
-    <h2>Awards</h2>
-    <ul>
-        <li>
-            <h5>Bronze Award - Oct 2023</h5>
-            Recognized for dedication towards driving the Niagara Access product to completion for MVO-1. Leadership, self-driven effort and countless hours towards the development of the product.
-        </li>
-        <li>
-            <h5>Bronze Award - Nov 2022</h5>
-            Recognized for resolving a critical release blocker bug and implementing an efficient solution in Niagara Analytics to handle memory leaks during caching.
-        </li>
-        <li>
-            <h5>Silver Award - Jul 2022</h5>
-            Recognized for Excellent Design, architecture, ownership and delivery on Sine Visitor Management Integration.
-        </li>
-        <li>
-            <h5>Bronze Award - May 2022</h5>
-            Recognized for excellent project understanding and innovative contribution as a fresher from college
-        </li>
-        <li>
-            <h5>Bravo Award - Aug 2020</h5>
-            Recognized during internship for envisioning the product, Virtual Aircraft Assistant and deploying it in a period of 8 weeks.
-        </li>
-        <li>
-            <h5>Open IIT Product Designing - Sep 2018</h5>
-            Awarded second position out of 25 teams for conceptualizing a product to provide relief to patients suffering from Carpal Tunnel Syndrome
-        </li>
-    </ul>
-    <hr>
-    <a href="./public/contacts.html">Contact Details</a>
-    <footer>
-        <p>© 2024 Shammi Agarwal</p>
-    </footer>
-</body>
+  </head>
+  <body>
+    <div class="resume">
+      <div class="about-me">
+        <img src="./assets/images/profile.jpg" alt="profile picture" />
+        <div class="summary">
+          <h2>Summary</h2>
+          <p>
+            I am a passionate software developer fueled by the thrill of solving
+            complex problems and creating innovative solutions. With a solid
+            foundation in Java development and an eagerness to learn new things,
+            I thrive on pushing the boundaries of my knowledge and embracing new
+            challenges head-on.
+          </p>
+        </div>
+        <div class="contact">
+          <h2>Contact Me</h2>
+          <span>
+            <i class="fa fa-mobile"></i>
+            +91 89103-15797
+          </span>
+          <span>
+            <i class="fa fa-map-marker"></i>
+            Bangalore, India
+          </span>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/shammi-agarwal-b02268188"
+              target="_blank"
+            >
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="mailto:shammi2k@gmail.com" target="_blank">
+              <i class="fa fa-envelope"></i>
+            </a>
+            <a href="https://github.com/Shammi2k" target="_blank">
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="resume-main">
+        <h1><span>Shammi</span> Agarwal</h1>
+        <div class="resume-content">
+          <div class="experience">
+            <h2>Work Experience</h2>
+            <div class="bullet">
+              <div class="title">
+                <div class="first-line">
+                  <div class="name">Advanced Software Engineer</div>
+                  <div class="date">Feb 2023 - Present</div>
+                </div>
+                <div class="sub-heading">Honeywell, Bangalore</div>
+              </div>
+              <ul>
+                <li>
+                  Developing Enterprise Security application which is an access
+                  control application for enterprises to supervise access to
+                  employees.
+                </li>
+                <li>
+                  Leading the integration of Enterprise Security with Z9 to
+                  communicate seamlessly with multiple access systems for easy
+                  migration.
+                </li>
+              </ul>
+            </div>
+            <div class="bullet">
+              <div class="title">
+                <div class="first-line">
+                  <div class="name">Software Engineer II</div>
+                  <div class="date">Jul 2021 - Feb 2023</div>
+                </div>
+                <div class="sub-heading">Honeywell, Bangalore</div>
+              </div>
+              <ul>
+                <li>
+                  Working on Niagara Framework, a data normalization based
+                  software infrastructure used to manage and control diverse
+                  systems and devices communicating on a variety of protocols
+                  using multiple drivers.
+                </li>
+                <li>
+                  Developed and owned anticipated feature, Visitor Integration
+                  service in Enterprise Security 4.12 release. The feature
+                  integrated Niagara's Enterprise Security service with Sine, a
+                  visitor management solution using AWS IoT based solutions for
+                  communication.
+                </li>
+                <li>
+                  Enhanced Niagara Analytics module to improve user experience
+                  by providing data visualization using various charts and
+                  tables.
+                </li>
+                <li>
+                  Cleaned around 2000 compiler warnings in enterprise security
+                  legacy code improving code quality.
+                </li>
+              </ul>
+            </div>
+            <div class="bullet">
+              <div class="title">
+                <div class="first-line">
+                  <div class="name">Software Engineer Intern</div>
+                  <div class="date">Jun 2020 - Aug 2020</div>
+                </div>
+                <div class="sub-heading">Honeywell, Bangalore</div>
+              </div>
+              <ul>
+                <li>
+                  Envisioned a Virtual Aircraft Assistant from scratch to
+                  decrease the workload of cabin crew and increase the safety of
+                  the aircraft.
+                </li>
+                <li>
+                  Deployed Virtual Aircraft Assistant on an Edge Computer which
+                  receives the feed from a camera and trained model from cloud.
+                </li>
+                <li>
+                  Implemented using a Deep Learning model YOLO on a darknet
+                  framework after comparing the results of multiple models.
+                </li>
+                <li>
+                  Achieved a best case recall of 95% and an output of 24 frames
+                  per second on a NVIDIA TX2 edge device receiving live video.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="education">
+            <h2>Education</h2>
+            <div class="bullet">
+              <div class="title">
+                <div class="first-line">
+                  <div class="name">
+                    Electronics and Electrical Communications Engineering
+                  </div>
+                  <div class="date">Jul 2017 - Apr 2021</div>
+                </div>
+                <div class="sub-heading">
+                  Indian Institute of Technology, Kharagpur
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills">
+            <h2>Skills</h2>
+            <div class="bullet">
+              <div class="title">
+                <div class="first-line">
+                  <div class="name">Programming Languages</div>
+                </div>
+              </div>
+              <ul>
+                <li>Java</li>
+                <li>C++</li>
+                <li>C</li>
+                <li>Javascript</li>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>Python</li>
+              </ul>
+            </div>
+            <div class="bullet">
+              <div class="title">
+                <div class="first-line">
+                  <div class="name">Domain Knowledge</div>
+                </div>
+              </div>
+              <ul>
+                <li>Amazon Web Services</li>
+                <li>Azure Cloud</li>
+                <li>Git</li>
+                <li>Data Analytics</li>
+              </ul>
+            </div>
+          </div>
+          <div class="certifications">
+            <h2>Licenses and Certificates</h2>
+            <div class="bullet">
+              <div class="title">
+                <div class="first-line">
+                  <div class="name">
+                    Tridium Inc Certified Niagara Developer
+                  </div>
+                </div>
+              </div>
+              Niagara is a framework built on top of Java. In this
+              certification, learnt and developed drivers and appliances in
+              Niagara framework.
+            </div>
+            <div class="bullet">
+              <div class="title">
+                <div class="first-line">
+                  <div class="name">
+                    Microsoft Certified: Azure Fundamentals
+                  </div>
+                </div>
+              </div>
+              Certified for proper understand of the fundamentals of azure cloud
+              and the various services offered by it.
+            </div>
+            <div class="bullet">
+              <div class="title">
+                <div class="first-line">
+                  <div class="name">
+                    Ultimate AWS Certified Solutions Architect Associate
+                  </div>
+                </div>
+              </div>
+              Practical implementation of multiple aws services and studying
+              unique architectures built using these services
+            </div>
+          </div>
+          <div class="awards">
+            <h2>Awards</h2>
+            <div class="bullet">
+              <div class="title">
+                <div class="first-line">
+                  <div class="name">Bronze Award</div>
+                  <div class="date">Oct 2023</div>
+                </div>
+                <div class="sub-heading">Honeywell, Bangalore</div>
+              </div>
+              Recognized for dedication towards driving the Niagara Access
+              product to completion for MVO-1. Leadership, self-driven effort
+              and countless hours towards the development of the product.
+            </div>
+            <div class="bullet">
+              <div class="title">
+                <div class="first-line">
+                  <div class="name">Bronze Award</div>
+                  <div class="date">Nov 2022</div>
+                </div>
+                <div class="sub-heading">Honeywell, Bangalore</div>
+              </div>
+              Recognized for resolving a critical release blocker bug and
+              implementing an efficient solution in Niagara Analytics to handle
+              memory leaks during caching.
+            </div>
+            <div class="bullet">
+              <div class="title">
+                <div class="first-line">
+                  <div class="name">Silver Award</div>
+                  <div class="date">Jul 2022</div>
+                </div>
+                <div class="sub-heading">Honeywell, Bangalore</div>
+              </div>
+              Recognized for Excellent Design, architecture, ownership and
+              delivery on Sine Visitor Management Integration.
+            </div>
+            <div class="bullet">
+              <div class="title">
+                <div class="first-line">
+                  <div class="name">Bronze Award</div>
+                  <div class="date">May 2022</div>
+                </div>
+                <div class="sub-heading">Honeywell, Bangalore</div>
+              </div>
+              Recognized for excellent project understanding and innovative
+              contribution as a fresher from college
+            </div>
+            <div class="bullet">
+              <div class="title">
+                <div class="first-line">
+                  <div class="name">Bravo Award</div>
+                  <div class="date">Aug 2020</div>
+                </div>
+                <div class="sub-heading">Honeywell, Bangalore</div>
+              </div>
+              Recognized during internship for envisioning the product, Virtual
+              Aircraft Assistant and deploying it in a period of 8 weeks.
+            </div>
+            <div class="bullet">
+              <div class="title">
+                <div class="first-line">
+                  <div class="name">Open IIT Product Designing : Silver</div>
+                  <div class="date">Sep 2018</div>
+                </div>
+                <div class="sub-heading">
+                  Indian Institute of Technology, Kharagpur
+                </div>
+              </div>
+              Awarded second position out of 25 teams for conceptualizing a
+              product to provide relief to patients suffering from Carpal Tunnel
+              Syndrome
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
